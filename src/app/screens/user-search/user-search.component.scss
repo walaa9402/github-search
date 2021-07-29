@@ -1,0 +1,13 @@
+.user-search {
+  background-image: url(../../../assets/img/search-backbround.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  .vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  }
+}
