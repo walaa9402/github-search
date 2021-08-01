@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { LoaderService } from './core/services/loader.service';
+import { BlockUI, NgBlockUI } from 'ng-block-ui';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'github-search';
+  // Wires up BlockUI instance
+  @BlockUI() blockUI!: NgBlockUI;
+
+  constructor(public loaderService: LoaderService) {
+    this.blockUI.start('');
+  }
 }

@@ -1,3 +1,5 @@
 <div class="layout">
   <router-outlet></router-outlet>
 </div>
+<block-ui [hidden]="!loaderService.loading">
+</block-ui>
