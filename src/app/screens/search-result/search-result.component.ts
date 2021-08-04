@@ -57,7 +57,7 @@ export class SearchResultComponent implements OnInit {
 
   // #region load controls
 
-  search(searchKey: string, perPage: number = 12, page: number = 1): void {
+  search(searchKey: string, perPage: number = 8, page: number = 1): void {
     this.githubService.search(searchKey, perPage, page).subscribe((res: UserSearchResultDto) => {
       this.searchResult = res;
     });

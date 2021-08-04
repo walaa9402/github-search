@@ -36,7 +36,7 @@
     </div>
   </div>
   <!-- pagination  -->
-  <div class="row justify-content-center text-light pt-5">
+  <div class="row justify-content-center text-light pt-5" *ngIf="searchResult.total_count">
     <div class="col-3">
       <span class="btn btn-secondary mr-3" (click)="previousPage()">Previous </span>
       <span class="btn btn-secondary ml-3" (click)="nextPage()">Next</span>
