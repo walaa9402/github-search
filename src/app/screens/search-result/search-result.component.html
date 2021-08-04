@@ -25,8 +25,9 @@
         <h4 class="text-light bold" (click)="navigateToUrl(user.html_url)">{{user.login}}</h4>
         <p class="text-light">Score : {{user.score}}</p>
         <small>
-          <small class="btn btn-secondary mr-2" (click)="navigateToUrl(user.followers_url)">Followers</small>
-          <small class="btn btn-secondary" (click)="navigateToUrl(user.following_url)">Following</small>
+          <small class="btn btn-secondary mr-2"
+            (click)="navigateToUrl(user.html_url+'?tab=followers')">Followers</small>
+          <small class="btn btn-secondary" (click)="navigateToUrl(user.html_url+'?tab=following')">Following</small>
         </small>
         <div class="text-white link" (click)="navigateToUrl(user.html_url+'?tab=repositories')">
           See {{user.login}}'s Repositories
