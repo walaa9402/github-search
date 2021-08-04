@@ -28,9 +28,9 @@
           <small class="btn btn-secondary mr-2" (click)="navigateToUrl(user.followers_url)">Followers</small>
           <small class="btn btn-secondary" (click)="navigateToUrl(user.following_url)">Following</small>
         </small>
-        <div class="text-white link" (click)="navigateToUrl(user.repos_url)">
+        <div class="text-white link" (click)="navigateToUrl(user.html_url+'?tab=repositories')">
           See {{user.login}}'s Repositories
-          <button class="btn-success rounded" (click)="navigateToUrl(user.repos_url)">Go</button>
+          <button class="btn-success rounded" (click)="navigateToUrl(user.html_url+'?tab=repositories')">Go</button>
         </div>
       </div>
     </div>
